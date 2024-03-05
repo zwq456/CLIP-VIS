@@ -109,4 +109,4 @@ We train our network on training set of LVIS dataset and evaluate our network on
 
 
 ## Acknowledgement
-We would like to acknowledge the contributions of public projects, such as [Mask2Former]([https://github.com/KU-CVLAB/CAT-Seg](https://github.com/facebookresearch/Mask2Former)), [LVVIS](https://github.com/haochenheheda/LVVIS/) and [fc-clip](https://github.com/bytedance/fc-clip) whose code has been utilized in this repository.
+We would like to acknowledge the contributions of public projects, such as [Mask2Former](https://github.com/facebookresearch/Mask2Former), [LVVIS](https://github.com/haochenheheda/LVVIS/) and [fc-clip](https://github.com/bytedance/fc-clip) whose code has been utilized in this repository.
