@@ -1,0 +1,10 @@
+cython
+scipy
+shapely
+timm==0.9.10
+h5py
+submitit
+scikit-image
+opencv-python-headless
+open_clip_torch
+einops
