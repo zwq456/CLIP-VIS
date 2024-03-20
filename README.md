@@ -64,36 +64,26 @@ sh scripts/eval_video.sh configs/clipvis_video_R50.yaml 4 '("lvvis_val",)' 1196 
 <!-- <img width="20%" src="assert/00077.gif "><br>
 <img width="20%" src="assert/00077.gif "><br> -->
 <div style="display: flex;">
-    <img width="18%" src="assert/00077.gif" style="margin-right: 0
-    px;">
-    <img width="18%" src="assert/00251.gif" style="margin-right: 0
-    px;">
-    <img width="18%" src="assert/00304.gif" style="margin-right: 0
-    px;">
-    <img width="18%" src="assert/00290.gif" style="margin-right: 0
-    px;">
+    <img width="18%" src="assert/00077.gif">
+    <img width="18%" src="assert/00251.gif">
+    <img width="18%" src="assert/00304.gif">
+    <img width="18%" src="assert/00290.gif">
     <img width="18%" src="assert/00139.gif">
 </div>
 <div style="display: flex;">
-    <img width="18%" src="assert/00129.gif" style="margin-right: 0
-    px;">
-    <img width="18%" src="assert/00134.gif" style="margin-right: 0
-    px;">
-    <img width="18%" src="assert/00181.gif" style="margin-right: 0
-    px;">
-    <img width="18%" src="assert/00202.gif" style="margin-right: 0
-    px;">
+    <img width="18%" src="assert/00129.gif" >
+    <img width="18%" src="assert/00134.gif">
+    <img width="18%" src="assert/00181.gif">
+    <img width="18%" src="assert/00202.gif">
     <img width="18%" src="assert/00254.gif">
 </div>
 <div style="display: flex;">
-    <img width="45%" src="assert/2d802cb8.gif" style="margin-right: 0
-    px;">
-    <img width="45%" src="assert/2112a80d.gif">
+    <img width="46%" src="assert/2d802cb8.gif">
+    <img width="46%" src="assert/2112a80d.gif">
 </div>
 <div style="display: flex;">
-    <img width="45%" src="assert/30446667.gif" style="margin-right: 0
-    px;">
-    <img width="45%" src="assert/86b8e4ec.gif">
+    <img width="46%" src="assert/86b8e4ec.gif">
+    <img width="46%" src="assert/30446667.gif">
 </div>
 <!-- <img width="100%" src="assert/30446667.gif "><br>
 <img width="100%" src="assert/2112a80d.gif"><br> -->
