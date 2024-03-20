@@ -60,9 +60,42 @@ sh scripts/eval_video.sh configs/clipvis_video_R50.yaml 4 '("lvvis_val",)' 1196 
 ```
 
 ## Results
-<img width="100%" src="assert/visual.png "><br>
-
-
+<!-- <img width="20%" src="assert/00077.gif "><br>
+<img width="20%" src="assert/00077.gif "><br> -->
+<div style="display: flex;">
+    <img width="20%" src="assert/00077.gif" style="margin-right: 5
+    px;">
+    <img width="20%" src="assert/00251.gif" style="margin-right: 5
+    px;">
+    <img width="20%" src="assert/00304.gif" style="margin-right: 5
+    px;">
+    <img width="20%" src="assert/00290.gif" style="margin-right: 5
+    px;">
+    <img width="20%" src="assert/00139.gif">
+</div>
+<div style="display: flex;">
+    <img width="20%" src="assert/00129.gif" style="margin-right: 5
+    px;">
+    <img width="20%" src="assert/00134.gif" style="margin-right: 5
+    px;">
+    <img width="20%" src="assert/00181.gif" style="margin-right: 5
+    px;">
+    <img width="20%" src="assert/00202.gif" style="margin-right: 5
+    px;">
+    <img width="20%" src="assert/00254.gif">
+</div>
+<div style="display: flex;">
+    <img width="50%" src="assert/2d802cb8.gif" style="margin-right: 5
+    px;">
+    <img width="50%" src="assert/2112a80d.gif">
+</div>
+<div style="display: flex;">
+    <img width="50%" src="assert/30446667.gif" style="margin-right: 5
+    px;">
+    <img width="50%" src="assert/86b8e4ec.gif">
+</div>
+<!-- <img width="100%" src="assert/30446667.gif "><br>
+<img width="100%" src="assert/2112a80d.gif"><br> -->
 We train our network on training set of LVIS dataset and evaluate our network on multiple video datasets. We provide pretrained weights for our models reported in the paper. All of the models were evaluated with 4 NVIDIA 3090 GPUs.
 
 
@@ -107,6 +140,18 @@ We train our network on training set of LVIS dataset and evaluate our network on
 
 </tbody></table>
 
+## Citation
+
+```BibTeX
+@misc{zhu2024clipvis,
+      title={CLIP-VIS: Adapting CLIP for Open-Vocabulary Video Instance Segmentation}, 
+      author={Wenqi Zhu, Jiale Cao, Jin Xie, Shuangming Yang, and Yanwei Pang},
+      year={2024},
+      eprint={2403.12455},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
 
 ## Acknowledgement
 We would like to acknowledge the contributions of public projects, such as [Mask2Former](https://github.com/facebookresearch/Mask2Former), [LVVIS](https://github.com/haochenheheda/LVVIS/) and [fc-clip](https://github.com/bytedance/fc-clip) whose code has been utilized in this repository.
