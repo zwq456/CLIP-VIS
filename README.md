@@ -134,13 +134,11 @@ We train our network on training set of LVIS dataset and evaluate our network on
 ## Citation
 
 ```BibTeX
-@misc{zhu2024clipvis,
-      title={CLIP-VIS: Adapting CLIP for Open-Vocabulary Video Instance Segmentation}, 
-      author={Wenqi Zhu, Jiale Cao, Jin Xie, Shuangming Yang, and Yanwei Pang},
-      year={2024},
-      eprint={2403.12455},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{zhu2024clip,
+  title={CLIP-VIS: Adapting CLIP for Open-Vocabulary Video Instance Segmentation},
+  author={Zhu, Wenqi and Cao, Jiale and Xie, Jin and Yang, Shuangming and Pang, Yanwei},
+  journal={arXiv preprint arXiv:2403.12455},
+  year={2024}
 }
 ```
 
