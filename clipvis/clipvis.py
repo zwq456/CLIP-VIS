@@ -344,12 +344,13 @@ class CLIPVIS(nn.Module):
                 raise NotImplementedError
 
             out_vocab_cls_results = get_classification_logits(pooled_clip_feature, text_classifier, self.backbone.clip_model.logit_scale, num_templates)
-           
+            if "rn" in self.backbone.model_name.lower():
+                    valid_masking = ((mask_for_pooling > 0).to(mask_for_pooling).sum(-1).sum(-1))> 0
+                    valid_masking = ~valid_masking
+                    out_vocab_cls_results[valid_masking]=0.0
 
            
-            out_vocab_cls_probs = out_vocab_cls_results.softmax(-1)[..., :-1]
-            out_vocab_cls_probs[torch.where(torch.isnan(out_vocab_cls_probs))]=0.0
-            
+            out_vocab_cls_probs = out_vocab_cls_results.softmax(-1)
             object_scores = F.softmax(mask_object_cls_results, dim=-1)[...,:-1]
             final_scores = (out_vocab_cls_probs * mask_pred_ious* object_scores) ** 0.5
             mask_cls_results=final_scores
