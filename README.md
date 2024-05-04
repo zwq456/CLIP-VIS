@@ -129,6 +129,30 @@ We train our network on training set of LVIS dataset and evaluate our network on
 <td align="center"><a href="https://drive.google.com/file/d/1kq83mvHqKZP6nYvo3hbBNu9sIPWos5JN/view?usp=sharing">ckpt</a>&nbsp;
 </tr>
 
+<tr>
+<td align="center">COCO,YTVIS19</td>
+<td align="center">ResNet-50</td>
+<td align="center">9.2</td>
+<td align="center">6.8</td>
+<td align="center">15.2</td>
+<td align="center">41.0</td>
+<td align="center">35.5</td>
+<td align="center">4.3</td>
+<td align="center"><a href="https://drive.google.com/file/d/1hMX7kCOrymXmVbPIRfFF-C1wpXLYu0Ay/view?usp=drive_link">ckpt</a>&nbsp;
+</tr>
+
+<tr>
+<td align="center">COCO,YTVIS19</td>
+<td align="center">ConvNeXt-B</td>
+<td align="center">14.1</td>
+<td align="center">10.7</td>
+<td align="center">18.4</td>
+<td align="center">50.0</td>
+<td align="center">43.7</td>
+<td align="center">5.0</td>
+<td align="center"><a href="https://drive.google.com/file/d/1ScH3EdZIOcPidbXMdw13RTED6Wa-PnXb/view?usp=drive_link">ckpt</a>&nbsp;
+</tr>
+
 </tbody></table>
 
 ## Citation
