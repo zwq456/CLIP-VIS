@@ -6,7 +6,7 @@ MODEL:
 
   FC_CLIP:
     CLIP_MODEL_NAME: "convnext_base_w_320"
-    CLIP_PRETRAINED_WEIGHTS: "laion2b_s29b_b131k_ft_soup"
+    CLIP_PRETRAINED_WEIGHTS: "laion_aesthetic_s13b_b82k"
     EMBED_DIM: 640
 
   SEM_SEG_HEAD:
