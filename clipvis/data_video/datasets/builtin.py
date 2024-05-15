@@ -63,7 +63,7 @@ _PREDEFINED_SPLITS_LVVIS = {
 
 _PREDEFINED_SPLITS_BURST= {
     "burst_val": ("burst/val",
-                         "burst/b2y_val.json"),
+                         "burst/val/b2y_val.json"),
 }
 
 def register_all_ytvis_2019(root):
