@@ -50,7 +50,7 @@ python train_net_video.py --config $config \
  MODEL.WEIGHTS $weight
  $opts
 python tools/mAP.py --et $val_data \
---dt $output
+ --dt $output
 
 
 # python mAP.py --gt datasets/lvvis/val/val_instances.json \
