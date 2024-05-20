@@ -30,6 +30,5 @@ python train_net.py --config $config \
  --num-gpus $gpus \
  SOLVER.IMS_PER_BATCH $bs \
  OUTPUT_DIR $output \
- 
  $opts
     
