@@ -47,7 +47,7 @@ python train_net_video.py --config $config \
  DATASETS.TEST $val_data \
  OUTPUT_DIR $output \
  TEST.TEST_NUM_CLASSES $test_num_class  \
- MODEL.WEIGHTS $weight
+ MODEL.WEIGHTS $weight \
  $opts
 python tools/mAP.py --et $val_data \
  --dt $output
