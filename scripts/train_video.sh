@@ -2,7 +2,7 @@
 
 config=$1
 gpus=$2
-bs=$s3
+bs=$3
 output=$4
 
 if [ -z $config ]
