@@ -19,11 +19,11 @@ This repo is the official implementation of `CLIP-VIS: Adapting CLIP for Open-Vo
 </div>
 <div style="display: flex;">
     <img width="46%" src="assert/2d802cb8.gif">
-    <img width="46%" src="assert/2112a80d.gif">
+    <img width="46%" src="assert/86b8e4ec.gif">
 </div>
 <div style="display: flex;">
-    <img width="46%" src="assert/86b8e4ec.gif">
-    <img width="46%" src="assert/30446667.gif">
+    <img width="46%" src="assert/2112a80d.gif">
+    <img width="46%" src="assert/d084134f.gif">
 </div>
 
 
@@ -38,15 +38,7 @@ which adaptively selects K mostly matching frames to
 perform query matching.
 - We further introduce a weighted open-vocabulary classification module, which refines mask classification by
 correlating mask prediction and classification.
-- Our CLIP-VIS achieves superior performance on multiple
-datasets. On validation of LV-VIS dataset, our CLIP-VIS
-outperforms OV2Seg by 4.6% and 11.0% AP using the
-backbone ResNet50 and ConNext-B. When evaluating
-novel categories, our CLIP-VIS outperforms OV2Seg by
-10.9% and 24.0% AP, which demonstrates the good
-zero-shot classification ability to novel categories. When
-using the ResNet50 as backbone, our CLIP-VIS outperforms OpenVIS by 1.7% AP on the validation set of
-BURST dataset.
+- Our CLIP-VIS achieves superior performance on multiple datasets. On the LV-VIS validation set, CLIP-VIS outperforms OV2Seg by 5.3% and 11.1% AP using the ResNet50 and ConNext-B backbones, respectively. Furthermore, when evaluating on novel categories, CLIP-VIS achieves a ignificant improvement, outperforming OV2Seg by 12.3% and 23.9% AP, which demonstrates the robust zero-shot classification ability for unseen categories. Additionally, with ResNet50 as the backbone, CLIP-VIS outperforms OpenVIS by 1.6% AP and 1.4% APn on the BURST dataset validation set, further demonstrating its effectiveness.
 
 For further details, please check out our [paper](http://arxiv.org/abs/2403.12455).
 ## Installation
@@ -107,50 +99,50 @@ We train our network on training set of LVIS dataset and evaluate our network on
 <tr>
 <td align="center">LVIS</td>
 <td align="center">ResNet-50</td>
-<td align="center">18.8</td>
-<td align="center">13.8</td>
-<td align="center">12.3</td>
-<td align="center">30.7</td>
-<td align="center">28.7</td>
-<td align="center">5.1</td>
-<td align="center"><a href="https://drive.google.com/file/d/1NhjFlRO9UPUtgzyFKCnxjCDlVqiPhu7Q/view?usp=sharing">ckpt</a>&nbsp;
+<td align="center">19.5</td>
+<td align="center">14.6</td>
+<td align="center">14.1</td>
+<td align="center">32.2</td>
+<td align="center">30.1</td>
+<td align="center">5.2</td>
+<td align="center"><a href="https://drive.google.com/file/d/1taVBPVTX-MVQkp5nc0QgreiaJqFhYgtJ/view?usp=drive_link">ckpt</a>&nbsp;
 </tr>
 <!-- ROW: CLIPVIS (B) -->
 <tr>
 
 <td align="center">LVIS</td>
 <td align="center">ConvNeXt-B</td>
-<td align="center">32.1</td>
-<td align="center">25.2</td>
-<td align="center">18.2</td>
-<td align="center">42.3</td>
-<td align="center">39.5</td>
-<td align="center">8.5</td>
-<td align="center"><a href="https://drive.google.com/file/d/1kq83mvHqKZP6nYvo3hbBNu9sIPWos5JN/view?usp=sharing">ckpt</a>&nbsp;
+<td align="center">32.2</td>
+<td align="center">25.3</td>
+<td align="center">18.5</td>
+<td align="center">42.1</td>
+<td align="center">37.9</td>
+<td align="center">8.3</td>
+<td align="center"><a href="https://drive.google.com/file/d/1R7qGowGbY9Al7ygU2fZ-Y5uG5xfgmDyT/view?usp=drive_link">ckpt</a>&nbsp;
 </tr>
 
 <tr>
 <td align="center">COCO,YTVIS19</td>
 <td align="center">ResNet-50</td>
-<td align="center">9.2</td>
-<td align="center">6.8</td>
-<td align="center">15.2</td>
-<td align="center">41.0</td>
-<td align="center">35.5</td>
-<td align="center">4.3</td>
-<td align="center"><a href="https://drive.google.com/file/d/1hMX7kCOrymXmVbPIRfFF-C1wpXLYu0Ay/view?usp=drive_link">ckpt</a>&nbsp;
+<td align="center">9.4</td>
+<td align="center">6.7</td>
+<td align="center">15.8</td>
+<td align="center">39.7</td>
+<td align="center">35.7</td>
+<td align="center">4.2</td>
+<td align="center"><a href="https://drive.google.com/file/d/14Oed2SbCVZcAtV1yaZIzuc7adGXuHiyZ/view?usp=drive_link">ckpt</a>&nbsp;
 </tr>
 
 <tr>
 <td align="center">COCO,YTVIS19</td>
 <td align="center">ConvNeXt-B</td>
-<td align="center">14.1</td>
-<td align="center">10.7</td>
-<td align="center">18.4</td>
+<td align="center">15.9</td>
+<td align="center">12.0</td>
+<td align="center">18.6</td>
 <td align="center">50.0</td>
-<td align="center">43.7</td>
+<td align="center">44.2</td>
 <td align="center">5.0</td>
-<td align="center"><a href="https://drive.google.com/file/d/1ScH3EdZIOcPidbXMdw13RTED6Wa-PnXb/view?usp=drive_link">ckpt</a>&nbsp;
+<td align="center"><a href="https://drive.google.com/file/d/1fxujJmjMLAkXubzYSqiv2cVgDYIIp64f/view?usp=drive_link">ckpt</a>&nbsp;
 </tr>
 
 </tbody></table>
