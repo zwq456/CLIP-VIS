@@ -539,20 +539,10 @@ class MultiScaleMaskedTransformerDecoder(nn.Module):
         outputs_embed = self.mask_pooling(dense_feature, mask_for_pooling)   
 
         output_iou=self.iou_head(decoder_output)
-        output_iou=F.relu(output_iou)
+        output_iou=output_iou.sigmoid()
 
         # output_iou=0
 
-        # NOTE: prediction is of higher-resolution
-        # [B, Q, H, W] -> [B, Q, H*W] -> [B, h, Q, H*W] -> [B*h, Q, HW]
-        #################################################
-        # outputs_class = self.class_embed(decoder_output)
-        # maskpool_embeddings = self.mask_pooling(x=mask_features, mask=outputs_mask) # [B, Q, C]
-        # maskpool_embeddings = self._mask_pooling_proj(maskpool_embeddings)
-        # class_embed = self.class_embed(maskpool_embeddings + decoder_output)
-        # outputs_class = get_classification_logits(class_embed, text_classifier, self.logit_scale, num_templates)
-
-        #################################################
         attn_mask = F.interpolate(outputs_mask, size=attn_mask_target_size, mode="bilinear", align_corners=False)
         # must use bool type
         # If a BoolTensor is provided, positions with ``True`` are not allowed to attend while ``False`` values will be unchanged.
@@ -562,18 +552,6 @@ class MultiScaleMaskedTransformerDecoder(nn.Module):
         # return outputs_object, outputs_class, outputs_mask, attn_mask
         return outputs_object, outputs_mask, attn_mask,output_iou,outputs_embed
 
-    # @torch.jit.unused
-    # def _set_aux_loss(self, outputs_object, outputs_class, outputs_seg_masks):
-    #     # this is a workaround to make torchscript happy, as torchscript
-    #     # doesn't support dictionary with non-homogeneous values, such
-    #     # as a dict having both a Tensor and a list.
-    #     if self.mask_classification:
-    #         return [
-    #         {"pred_object_logits": a, "pred_logits": b, "pred_masks": c}
-    #             for a, b, c in zip(outputs_object[:-1], outputs_class[:-1], outputs_seg_masks[:-1])
-    #         ]
-    #     else:
-    #         return [{"pred_masks": b} for b in outputs_seg_masks[:-1]]
 
     @torch.jit.unused
     def _set_aux_loss(self, outputs_object, outputs_mask_iou,outputs_seg_masks):
