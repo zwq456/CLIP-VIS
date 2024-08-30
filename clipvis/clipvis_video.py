@@ -449,6 +449,7 @@ class CLIPVIS_Video(nn.Module):
             gt_classes_per_video = torch.zeros_like(targets_per_frame.gt_classes)  
             gt_classes_per_video=gt_classes_per_video[valid_idx]        # N,
             gt_ids_per_video = gt_ids_per_video[valid_idx]                          # N, num_frames
+            gt_obj_per_video=gt_obj_per_video[valid_idx]
 
             gt_instances.append({"labels": gt_obj_per_video, "ids": gt_ids_per_video})
             gt_masks_per_video = gt_masks_per_video[valid_idx].float()          # N, num_frames, H, W
