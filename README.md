@@ -2,6 +2,7 @@
 
 This repo is the official implementation of `CLIP-VIS: Adapting CLIP for Open-Vocabulary Video Instance Segmentation`
 
+:fire: CLIP-VIS is accepted by TCSVT.
 
 <div style="display: flex;">
     <img width="18%" src="assert/00077.gif">
