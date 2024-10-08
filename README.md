@@ -41,7 +41,7 @@ perform query matching.
 correlating mask prediction and classification.
 - Our CLIP-VIS achieves superior performance on multiple datasets. On the LV-VIS validation set, CLIP-VIS outperforms OV2Seg by 5.3% and 11.1% AP using the ResNet50 and ConNext-B backbones, respectively. Furthermore, when evaluating on novel categories, CLIP-VIS achieves a ignificant improvement, outperforming OV2Seg by 12.3% and 23.9% AP, which demonstrates the robust zero-shot classification ability for unseen categories. Additionally, with ResNet50 as the backbone, CLIP-VIS outperforms OpenVIS by 1.6% AP and 1.4% APn on the BURST dataset validation set, further demonstrating its effectiveness.
 
-For further details, please check out our [paper](http://arxiv.org/abs/2403.12455).
+For further details, please check out our [paper](https://ieeexplore.ieee.org/document/10706247).
 ## Installation
 Please follow [installation](INSTALL.md). 
 
