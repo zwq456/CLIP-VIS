@@ -1,8 +1,8 @@
-# CLIP-VIS: Adapting CLIP for Open-Vocabulary Video Instance Segmentation
+# CLIP-VIS
 
 This repo is the official implementation of `CLIP-VIS: Adapting CLIP for Open-Vocabulary Video Instance Segmentation`
 
-:fire: CLIP-VIS is accepted by IEEE TCSVT.
+:fire: CLIP-VIS is accepted by IEEE TCSVT.  Paper: [Arxiv](https://arxiv.org/abs/2403.12455) [IEEE](https://ieeexplore.ieee.org/document/10706247). 
 
 <div style="display: flex;">
     <img width="18%" src="assert/00077.gif">
@@ -17,10 +17,6 @@ This repo is the official implementation of `CLIP-VIS: Adapting CLIP for Open-Vo
     <img width="18%" src="assert/00181.gif">
     <img width="18%" src="assert/00202.gif">
     <img width="18%" src="assert/00254.gif">
-</div>
-<div style="display: flex;">
-    <img width="46%" src="assert/2d802cb8.gif">
-    <img width="46%" src="assert/86b8e4ec.gif">
 </div>
 <div style="display: flex;">
     <img width="46%" src="assert/2112a80d.gif">
