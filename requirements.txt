@@ -6,5 +6,5 @@ h5py
 submitit
 scikit-image
 opencv-python-headless
-open_clip_torch
+open_clip_torch==2.24.0
 einops
